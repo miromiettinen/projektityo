@@ -71,6 +71,13 @@ for (let i of products.data) {
   let price = document.createElement("h6");
   price.innerText = "€" + i.price;
   container.appendChild(price);
+  let rentButton = document.createElement("button");
+  rentButton.classList.add("rent-button");
+  rentButton.innerText = "Rent Now";
+  rentButton.addEventListener("click", function() {
+    window.location.href = 'rental.html'; // change the URL to your rental form page
+  });
+  container.appendChild(rentButton);
 
   card.appendChild(container);
   document.getElementById("products").appendChild(card);

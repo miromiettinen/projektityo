@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <title>SportEco</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style7.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <a href="landingpage.html">
+          <img src="https://raw.githubusercontent.com/miromiettinen/projektityo/master/Projektityo/sporteco-low-resolution-logo-color-on-transparent-background.png" alt="Webstore Logo" />
+          </a>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="landingpage.html">Etusivu</a></li>
+            <li><a href="products.html">Selaa tuotteita</a></li>
+            <li><a href="productlisting.html">Jätä ilmoitus</a></li>
+            <li><a href="contact.html">Ota yhteyttä</a></li>
+            <li><a href="login.html">Kirjaudu sisään</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+</head>
+<body>
+  <main class="main">
+    <form action="#" method="post">
+      <fieldset>
+        <h4>Vuokraajan tiedot</h4>
+        <br>
+        <label for="name">Nimi:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Sähköposti:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Puhelin:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </fieldset>
+
+      <fieldset>
+        <h4>Vuokrauksen tiedot</h4>
+        <br>
+        <label for="startDate">Valitse alkamispäivä:</label>
+        <input type="date" id="startDate" name="startDate" required>
+        <label for="endDate">Vuokrauksen loppumispäivä:</label>
+        <input type="date" id="endDate" name="endDate" required>
+      </fieldset>
+
+      <button type="submit">Vahvista vuokraus</button>
+    </form>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="contact">
+        <h3>Yhteystiedot:</h3>
+        <p>Email: info@sporteco.com</p>
+        <p>Puh: 123-456-7890</p>
+      </div>
+      <div class="social-media">
+        <h3>Seuraa meitä:</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>&copy; 2023 SportEco. All rights reserved.</p>
+  </footer>
+	<script>
+    const startDateInput = document.getElementById('startDate');
+    const endDateInput = document.getElementById('endDate');
+    const rentalLengthOutput = document.createElement('p');
+  
+    function updateRentalLength() {
+      const startDate = new Date(startDateInput.value);
+      const endDate = new Date(endDateInput.value);
+  
+      if (isNaN(startDate.getTime()) || isNaN(endDate.getTime())) {
+        rentalLengthOutput.textContent = '';
+      } else {
+        const rentalLengthInDays = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24));
+        rentalLengthOutput.textContent = `Vuokrauksen pituus: ${rentalLengthInDays} päivää`;
+      }
+    }
+  
+    startDateInput.addEventListener('input', updateRentalLength);
+    endDateInput.addEventListener('input', updateRentalLength);
+  
+    const rentalForm = document.querySelector('form');
+    rentalForm.insertBefore(rentalLengthOutput, rentalForm.querySelector('button'));
+  </script>
+</body>
+</html>
