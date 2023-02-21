@@ -75,7 +75,7 @@ for (let i of products.data) {
   rentButton.classList.add("rent-button");
   rentButton.innerText = "Vuokraa tuote";
   rentButton.addEventListener("click", function() {
-    window.location.href = 'rental.html'; // change the URL to your rental form page
+    window.location.href = 'rental.html'; 
   });
   container.appendChild(rentButton);
 
