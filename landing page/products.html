@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <a href="landingpage.html">
+          <img src="C:\Users\mirom\Downloads\sporteco-low-resolution-logo-color-on-transparent-background.png" alt="Webstore Logo" />
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="landingpage.html">Etusivu</a></li>
+            <li><a href="products.html">Selaa tuotteita</a></li>
+            <li><a href="productlisting.html">Jätä ilmoitus</a></li>
+            <li><a href="contact.html">Ota yhteyttä</a></li>
+            <li><a href="login.html">Kirjaudu sisään</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Hae hakusanalla.."
+        />
+        <button id="search">Hae</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('Kaikki')">
+          Kaikki
+        </button>
+        <button class="button-value" onclick="filterProduct('winter')">
+          Talviurheilu
+        </button>
+        <button class="button-value" onclick="filterProduct('indoor')">
+          Sisäurheilu
+        </button>
+        <button class="button-value" onclick="filterProduct('cycling')">
+          Pyöräily
+        </button>
+        <button class="button-value" onclick="filterProduct('water')">
+          Vesiurheilu
+        </button>
+        <button class="button-value" onclick="filterProduct('other')">
+          Muut urheilulajit
+        </button>
+      </div>
+      <div id="products"></div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="contact">
+        <h3>Yhteystiedot:</h3>
+        <p>Email: info@sporteco.com</p>
+        <p>Puh: 123-456-7890</p>
+      </div>
+      <div class="social-media">
+        <h3>Seuraa meitä:</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>&copy; 2023 SportEco. All rights reserved.</p>
+  </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

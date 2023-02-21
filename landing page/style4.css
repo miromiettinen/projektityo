@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'lato' ;
+    margin: 0%;
+  }
+  
+  header {
+    background-color: #B2D7DF;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand-name {
+    font-size: 24px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  .logo img {
+    height: 60px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 30px;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #999;
+  }
+  
+  main {
+    background-color: #51838E;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-container {
+    background-color: #fff;
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  
+  textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #023e8a;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .contact, .social-media {
+    flex-basis: 50%;
+  }
+  
+  .social-media ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-media li {
+    margin: 0 10px;
+  }
+  
+  .social-media a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .social-media a:hover {
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .footer-container {
+      flex-wrap: wrap;
+    }
+    
+    .contact, .social-media {
+      flex-basis: 100%;
+    }
+  }

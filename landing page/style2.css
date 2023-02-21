@@ -1,0 +1,267 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+  
+  body {
+    font-family: 'lato' ;
+  }
+  
+  header {
+    background-color: #B2D7DF;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand-name {
+    font-size: 24px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  .logo img {
+    height: 60px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 30px;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #000000;
+  }
+  
+  main {
+    background-color: #51838E;
+    padding: 50px 0;
+  }
+  
+  h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;  
+  }
+  
+  .product-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding: 5%;
+    margin: 5px;
+    gap: 8px;
+  }
+  
+  .product {
+    background-color: #fff;
+    width: 48%;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .product h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .product p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .product button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product button:hover {
+    background-color: #000000;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .contact, .social-media {
+    flex-basis: 50%;
+  }
+  
+  .social-media ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-media li {
+    margin: 0 10px;
+  }
+  
+  .social-media a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .social-media a:hover {
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .footer-container {
+      flex-wrap: wrap;
+    }
+    
+    .contact, .social-media {
+      flex-basis: 100%;
+    }
+  }
+  
+  .product-filters {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-right: 50px; 
+  }
+  
+  .product-filters label {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .product-filters select {
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f8f8f8;
+    width: 200px;
+  }
+  .wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+  #search-container {
+    margin: 1em 0;
+  }
+  #search-container input {
+    background-color: white;
+    width: 40%;
+    border-bottom: 2px solid #110f29;
+    padding: 1em 0.3em;
+  }
+  #search-container input:focus {
+    border-bottom-color: #000000;
+  }
+  #search-container button {
+    padding: 1em 2em;
+    margin-left: 1em;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 0.5em;
+  }
+  .button-value {
+    border: 2px solid #000000;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: #000000;
+    cursor: pointer;
+  }
+  .active {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  #products {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1.5em;
+    padding: 2em 0;
+  }
+  .card {
+    background-color: #ffffff;
+    max-width: 18em;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+  }
+  .image-container {
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
+  }
+  .container {
+    padding-top: 1em;
+    color: #110f29;
+  }
+  .container h5 {
+    font-weight: 500;
+  }
+  .hide {
+    display: none;
+  }
+  @media screen and (max-width: 720px) {
+    img {
+      max-width: 100%;
+      object-fit: contain;
+      height: 10em;
+    }
+    .card {
+      max-width: 10em;
+      margin-top: 1em;
+    }
+    #products {
+      grid-template-columns: auto auto;
+      grid-column-gap: 1em;
+    }
+  }
+  

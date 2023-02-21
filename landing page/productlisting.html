@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <title>Sales Announcement</title>
+    <link rel="stylesheet" href="style3.css">
+  </head>
+  <body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+              <a href="landingpage.html">
+              <img src="C:\Users\mirom\Downloads\sporteco-low-resolution-logo-color-on-transparent-background.png" alt="Webstore Logo" />
+              </a>
+            </div>
+          <nav>
+            <ul>
+                <li><a href="landingpage.html">Etusivu</a></li>
+                <li><a href="products.html">Selaa tuotteita</a></li>
+                <li><a href="productlisting.html">Jätä ilmoitus</a></li>
+                <li><a href="contact.html">Ota yhteyttä</a></li>
+                <li><a href="login.html">Kirjaudu sisään</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    <main>
+      <div class="announcement-container">
+        <h1>Luo uusi ilmoitus</h1>
+        <form action="#" method="POST" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="title">Tuotteen nimi</label>
+            <input type="text" id="title" name="title" required>
+          </div>
+          <div class="form-group">
+            <label for="description">Kuvaus</label>
+            <textarea id="description" name="description" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="price">Hinta €/vuorokausi</label>
+            <input type="number" name="price" id="price" min="0" step="0.1" required>
+          </div>
+          <div>
+            <label for="product-condition">Tuotteen kunto:</label>
+            <select id="product-condition" name="product-condition" required>
+              <option value="">Valitse tuotteen kunto</option>
+              <option value="1">1 - Huono</option>
+              <option value="2">2 - Välttävä</option>
+              <option value="3">3 - Hyvä</option>
+              <option value="4">4 - Todella hyvä</option>
+              <option value="5">5 - Uusi</option>
+            </select>            
+          </div>
+          <div class="form-group">
+            <label for="image">Lisää kuva</label>
+            <input type="file" id="image" name="image" required>
+          </div>
+          <button type="submit">Jätä ilmoitus</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+          <div class="contact">
+            <h3>Yhteystiedot:</h3>
+            <p>Email: info@sporteco.com</p>
+            <p>Puh: 123-456-7890</p>
+          </div>
+          <div class="social-media">
+            <h3>Seuraa meitä:</h3>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <p>&copy; 2023 SportEco. All rights reserved.</p>
+      </footer>
+
+  </body>
+</html>
