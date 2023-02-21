@@ -73,7 +73,7 @@ for (let i of products.data) {
   container.appendChild(price);
   let rentButton = document.createElement("button");
   rentButton.classList.add("rent-button");
-  rentButton.innerText = "Rent Now";
+  rentButton.innerText = "Vuokraa tuote";
   rentButton.addEventListener("click", function() {
     window.location.href = 'rental.html'; // change the URL to your rental form page
   });
