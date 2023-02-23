@@ -5,48 +5,56 @@ let products = {
       category: "winter",
       price: "8",
       image: "https://shop.hockeybase.fi/ISA_HB/88912062-_0_lim_full.jpg",
+      sellerName: "MYYJÄN NIMI"
     },
     {
       productName: "Salibandymailoja",
       category: "indoor",
       price: "5",
       image: "https://yle.fi/aihe/sites/aihe/files/migrated/kkuluttaja/KUN_saba_viuhka.jpg",
+      sellerName: "MYYJÄN NIMI"
     },
     {
       productName: "Naisten laskettelusukset, pituus 156cm",
       category: "winter",
       price: "15",
       image: "https://www.lakeussport.fi/WebRoot/vilkasfi02/Shops/2016112815/5873/6A4D/EA9C/58DE/55F5/0A28/100A/0BCC/Chica_2.jpg",
+      sellerName: "MYYJÄN NIMI"
     },
     {
       productName: "Kajakki",
       category: "water",
       price: "30",
       image: "https://www.netrauta.fi/media/catalog/product/cache/2ef38d9c10cbab2cffdf4552e8a5efdc/k/a/kajakki-lyfco-390x60cm-taitettava-punainen-1.jpg",
+      sellerName: "MYYJÄN NIMI"
     },
     {
       productName: "Käsipainot 4-20kg",
       category: "other",
       price: "25",
       image: "https://images.unsplash.com/photo-1638536532686-d610adfc8e5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      sellerName: "MYYJÄN NIMI"
     },
     {
       productName: "Miesten maastopyörä",
       category: "cycling",
       price: "40",
       image: "https://images.unsplash.com/photo-1575585269294-7d28dd912db8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      sellerName: "MYYJÄN NIMI"
     },
     {
       productName: "Rullaluistimet kokoa 39",
       category: "other",
       price: "4",
       image: "https://images.unsplash.com/photo-1615670319396-d2ce67c79abd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1929&q=80",
+      sellerName: "MYYJÄN NIMI"
     },
     {
       productName: "Koripallo, Wilson",
       category: "indoor",
       price: "5",
       image: "https://images.unsplash.com/photo-1640576905072-8181534f83ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80",
+      sellerName: "MYYJÄN NIMI"
     },
   ],
 };
@@ -71,6 +79,9 @@ for (let i of products.data) {
   let price = document.createElement("h6");
   price.innerText = "€" + i.price;
   container.appendChild(price);
+  let seller = document.createElement("h6");
+  seller.innerText = i.sellerName;
+  container.appendChild(seller);
   let rentButton = document.createElement("button");
   rentButton.classList.add("rent-button");
   rentButton.innerText = "Vuokraa tuote";
